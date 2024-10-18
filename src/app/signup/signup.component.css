@@ -1,0 +1,34 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.signup-form {
+    border-radius: 10px; 
+    width: 50%;
+    height: fit-content;
+    background-color:aqua;
+    padding: 50px;
+    display:grid;
+    margin-bottom: 2px;
+
+
+
+}
+.signup {
+    padding-top: 70px;
+    background-color: black;
+    display: block;
+
+
+}
+button{
+    background-color: red;
+    cursor: pointer;
+    padding: 10px;
+
+}
+input{
+    padding:10px;
+    margin-bottom: 20px;
+}

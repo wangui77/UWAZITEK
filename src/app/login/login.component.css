@@ -1,0 +1,22 @@
+.login-form {
+    border-radius: 10px; 
+    width: 50%;
+    height: fit-content;
+    background-color:aqua;
+    padding: 50px;
+    display:grid;
+    margin-bottom: 2px;
+}
+.login {
+    padding-top: 70px;
+    background-color: black;
+    display: block;
+}
+.form-group {
+    margin-bottom: 1rem;
+  }
+  button{
+    background-color: red;
+    cursor: pointer;
+    padding: 10px;
+  }
