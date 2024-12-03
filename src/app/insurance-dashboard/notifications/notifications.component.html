@@ -1,0 +1,43 @@
+<h2>Pending Verifications</h2>
+<div *ngIf="forms.length > 0; ">
+  <div *ngFor="let form of forms">
+    <p><strong>Insurance Provider:</strong> {{ form.insuranceName }}</p>
+    <p><strong>Patient Full Name:</strong> {{ form.patientName }}</p>
+    <p><strong>Type of Patient:</strong> {{ form.typeOfPatient }}</p>
+    <p><strong>Insurance Policy Number:</strong> {{ form.policyNumber }}</p>
+
+     Approve and Reject Buttons 
+    <div>
+      <button (click)="approveForm(1)">Approve</button>
+      <button (click)="rejectForm(1)">Reject</button>
+    </div>
+    <hr />
+  </div>
+</div>
+
+    
+<ng-template #noForms>
+  <p>No pending forms.</p>
+</ng-template>
+
+<!--<div *ngFor="let form of forms">
+  <div>
+    <strong>Insurance Name:</strong> {{ form.insuranceName }}
+  </div>
+  <div>
+    <strong>Patient Name:</strong> {{ form.patientName }}
+  </div>
+  <div>
+    <strong>Type of Patient:</strong> {{ form.typeOfPatient }}
+  </div>
+  <div>
+    <strong>Policy Number:</strong> {{ form.policy_number }}
+  </div>
+  <div>
+    <strong>Status:</strong> {{ form.status }}
+  </div>
+  <div>
+    <button (click)="approveForm(form.id)" [disabled]="form.status !== 'pending'">Approve</button>
+    <button (click)="rejectForm(form.id)" [disabled]="form.status !== 'pending'">Reject</button>
+  </div>
+</div>-->

@@ -1,29 +1,23 @@
 import { Component } from '@angular/core';
-import { NgModule } from '@angular/core';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { RouterModule,} from '@angular/router';
 import { AppRoutingModule } from './app.routes';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [AppRoutingModule,],
-  template:`
-  <main>
-    <header class="brand">
-      <h1>WELCOME TO UWAZITEK</h1>
-      </header>
+  imports: [RouterModule,],
+  template: `
+    <router-outlet></router-outlet>
+  `,
 
-    <section class="content">
-  
-    </section>
-  </main>
-   `,
   styleUrls: ['./app.component.css']
 
+
 })
-export class AppComponent {
-  title = 'uwazitek';
+export class AppComponent{
+  
 }
 

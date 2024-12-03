@@ -1,1 +1,19 @@
-<h1>hello</h1>
+<body>
+<section class="login">
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
+      <div class="logo-container">
+        <img src="assets/logo.jpg" alt="Project Image" class="logo-image" />
+      </div>
+      <div class="form-values">
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email" placeholder="Enter email" required />
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password" placeholder="Enter Password" required />
+  
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a routerLink="/signup">Signup</a>.</p>
+      </div>
+    </form>
+  </section>
+  </body>

@@ -1,1 +1,47 @@
-<p>signup works!</p>
+<!-- signup.component.html -->
+<section class="signup-section">
+    <form [formGroup]="signupForm" class="signup-form" (ngSubmit)="onSubmit()">
+      <div class="logo-container">
+        <img src="assets/logo.jpg" alt="Project Logo" class="logo-image">
+      </div>
+  
+      <div class="form-details">
+        <div class="form-values">
+          <label for="signup_type">Sign up as:</label>
+          <select id="signup_type" formControlName="signup_type" (change)="onSignupTypeChange()">
+            <option value="hospital">Hospital</option>
+            <option value="insurance">Insurance</option>
+          </select>
+  
+          <div *ngIf="isHospitalSelected()">
+            <label for="hospital">Select Hospital:</label>
+            <select id="hospital" formControlName="hospital_id">
+              <option value="" disabled>Select Hospital</option>
+              <option *ngFor="let hospital of hospitals" [value]="hospital.hospitalId">{{ hospital.hospitalName }}</option>
+            </select>
+          </div>
+  
+          <div *ngIf="isInsuranceSelected()">
+            <label for="insurance">Select Insurance:</label>
+            <select id="insurance" formControlName="insurance_id">
+              <option value="" disabled>Select Insurance</option>
+              <option *ngFor="let insurance of insurances" [value]="insurance.insurance_id">{{ insurance.insurance_name }}</option>
+            </select>
+          </div>
+  
+          <label for="first_name">First Name:</label>
+          <input type="text" id="first_name" formControlName="first_name" placeholder="Enter your First Name">
+          <label for="last_name">Last Name:</label>
+          <input type="text" id="last_name" formControlName="last_name" placeholder="Enter your Last Name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" placeholder="Enter your email">
+          <label for="password">Password:</label>
+          <input type="password" id="password" formControlName="password" placeholder="Create a Password">
+  
+          <button type="submit">Sign Up</button>
+          <p>Already have an account? <a routerLink="/login">Login</a>.</p>
+        </div>
+      </div>
+    </form>
+  </section>
+  

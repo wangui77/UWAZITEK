@@ -1,0 +1,23 @@
+
+  <div class="logo-container">
+    <img src="assets/logo.jpg" alt="project Image"class=logo-image>
+  </div>
+
+  <nav class="top-navbar">
+    <a routerLink="home">
+      <lucide-angular [img]="layoutDashboard" class="my-icon"></lucide-angular> Home
+    </a>
+    <a routerLink="notifications">
+      <lucide-angular [img]="bell" class="my-icon"></lucide-angular> Notifications
+    </a>
+    <a routerLink="claimreports">
+      <lucide-angular [img]="upload" class="my-icon"></lucide-angular> ClaimReports
+    </a>
+    
+    <a (click)="logout()" class="logout-link">
+      <lucide-angular [img]="user" class="my-icon"></lucide-angular> Logout
+    </a>
+  </nav>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+</main>

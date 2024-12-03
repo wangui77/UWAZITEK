@@ -1,0 +1,72 @@
+<div class="dashboard-overview">
+  <mat-card class="overview-card" (click)="onCardClick('totalPreRequests')">
+    <mat-card-header>
+      <mat-icon>upload</mat-icon>
+      <mat-card-title>Total Uploaded Pre-requests</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Total: {{ totalPreRequests }}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overview-card" (click)="onCardClick('inquiries')">
+    <mat-card-header>
+      <mat-icon>person_search</mat-icon>
+      <mat-card-title>Patient Inquiries</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>View and manage patient inquiries.</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overview-card" (click)="onCardClick('claims')">
+    <mat-card-header>
+      <mat-icon>assignment</mat-icon>
+      <mat-card-title>Claims</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Submit and track claims.</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="overview-card" (click)="onCardClick('status')">
+    <mat-card-header>
+      <mat-icon>check_circle</mat-icon>
+      <mat-card-title>Status</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Check the status of pending tasks.</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+ 
+
+ <!--<div class="overview-card">
+  <h2>Total uploadedPre-requests</h2>
+ <p>Total{{totalPreRequests}}</p> 
+</div>
+
+  <div class="dashboard-overview">
+    <div class="overview-card">
+      <h2>Patient Inquiries</h2>
+      <p>View and manage patient inquiries.</p>  
+    </div>
+  
+    <div class="overview-card">
+      <h2>Claims</h2>
+      <p>Submit and track claims.</p>
+    </div>
+  
+    <div class="overview-card">
+      <h2>Status</h2>
+      <p>Check the status of pending tasks.</p>
+    </div>
+  </div>-->
+  
+  
+  
+  
+  
+  
+  

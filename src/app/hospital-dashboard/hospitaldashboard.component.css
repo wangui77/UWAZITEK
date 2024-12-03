@@ -1,0 +1,93 @@
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-overview {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.overview-card {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.overview-card h2 {
+  margin-top: 0;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.top-navbar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color:lightblue;
+  font-weight: bold;
+  margin: 0 10px;
+  border-bottom: 2px solid #333;
+}
+.top-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 10px;
+}
+.my-icon {
+  margin-right: 10px; 
+  font-size: 20px;
+}
+.content{
+  min-height: 60vh; 
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-image: url("/assets/hospital.jpg");
+}
+
+
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.logo-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  height: 100px;
+}
+.logout-link:hover {
+  background-color: #ff4d4d; /* Red background for logout on hover */
+}
+
+.logout-link:hover .my-icon {
+  color: white;  /* White color for logout icon on hover */
+}

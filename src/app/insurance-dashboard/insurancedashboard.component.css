@@ -1,0 +1,73 @@
+/*.content-container {
+    display: flex;
+    justify-content: center;
+   background-color: greenyellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .navbar{
+   
+    display: flex;
+  }*/
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .top-navbar {
+    display: flex;
+    justify-content: center;
+    background-color:black ;
+    padding: 10px;
+  }
+  
+  .top-navbar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(14, 162, 211);
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .top-navbar a.active {
+    border-bottom: 2px solid #333;
+  }
+  
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   background-image: url("/assets/doll.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .logo-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    height: 100px;
+  }
+  .logout-link:hover {
+    background-color: #ff4d4d; /* Red background for logout on hover */
+  }
+  
+  .logout-link:hover .my-icon {
+    color: white;  /* White color for logout icon on hover */
+  }

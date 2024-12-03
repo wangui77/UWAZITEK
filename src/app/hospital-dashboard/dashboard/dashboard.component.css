@@ -1,0 +1,172 @@
+.dashboard-overview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  padding: 50px;
+}
+
+.overview-card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: lightblue;
+  width: 250px; 
+  height: 150px; 
+  margin: 0 auto;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+mat-card-header mat-icon {
+  font-size: 32px;
+  color: #3f51b5; 
+}
+
+mat-card-header mat-icon:hover {
+  color: #303f9f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .dashboard-grid {
+    width: 80%; 
+    margin: auto;
+  }
+  
+  mat-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  mat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  mat-card h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  mat-card p {
+    font-size: 1rem;
+    color: #555;
+  }*/
+
+
+
+
+
+  
+  /*.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-overview {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .overview-card {
+    background-color: blue transparent;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .overview-card h2 {
+    margin-top: 0;
+  }
+  
+  .top-navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .top-navbar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 0 10px;
+    border-bottom: 2px solid #333;
+  }
+  .top-navbar {
+    display: flex;
+    justify-content: right;
+    background-color: lightblue;
+    padding: 10px;
+  }
+  .my-icon {
+    margin-right: 10px; 
+    font-size: 20px;
+  }
+ /* .content{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuu78uwG977lPck7jMe-3THeCLN6aH0lA4hw&s");
+  background-position: center;
+  background-repeat: no-repeat;
+  }*/

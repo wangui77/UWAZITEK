@@ -1,0 +1,35 @@
+<div class="claims-report">
+    <h2>Claims Report</h2>
+  
+    <!-- Patient Information -->
+    <h3>Patient Information</h3>
+    <p><strong>Name:</strong> {{ invoiceData?.patientName }}</p>
+    <p><strong>Policy Number:</strong> {{ invoiceData?.policyNumber }}</p>
+  
+    <!-- Invoice Details -->
+    <h3>Invoice Details</h3>
+    <p><strong>Invoice No:</strong> {{ invoiceData?.invoiceNumber }}</p>
+    <p><strong>Date:</strong> {{ invoiceData?.date }}</p>
+  
+    <!-- Items List -->
+    <h3>Items</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Description</th>
+          <th>Price ($)</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of invoiceData?.items" [class]="getCategoryClass(item.category)">
+          <td>{{ item.description }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.category }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <p><strong>Total:</strong> ${{ invoiceData?.total }}</p>
+  
+   

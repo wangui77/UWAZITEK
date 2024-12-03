@@ -1,0 +1,42 @@
+.claims-report {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .claims-report h2, .claims-report h3 {
+    color: #333;
+  }
+  
+  table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .fraud {
+    background-color: #ffcccc; /* Light red */
+    color: #a00; /* Dark red */
+  }
+  
+  .approve {
+    background-color: #ccffcc; /* Light green */
+    color: #080; /* Dark green */
+  }
+  
+  .investigate {
+    background-color: #ffffcc; /* Light yellow */
+    color: orange; /* Dark yellow */
+  }
+  

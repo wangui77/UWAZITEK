@@ -1,0 +1,22 @@
+
+<h2> Patient Verification Requests</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Insurance name</th>
+      <th>Patient Name</th>
+      <th>Type of Patient</th>
+      <th>Policy Number</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let form of forms">
+      <td>{{ form.insuranceName }}</td>
+      <td>{{ form.patientName }}</td>
+      <td>{{ form.typeOfPatient }}</td>
+      <td>{{ form.policyNumber }}</td>
+      <td>{{ form.status }}</td>
+    </tr>
+  </tbody>
+</table>
